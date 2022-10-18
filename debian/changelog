@@ -1,0 +1,12 @@
+ruby-async-rspec (1.16.1-2) unstable; urgency=medium
+
+  * Set Standards-Version: 4.6.0 with no change
+  * Upload to unstable
+
+ -- Hideki Yamane <henrich@debian.org>  Sat, 23 Oct 2021 20:51:30 +0900
+
+ruby-async-rspec (1.16.1-1) experimental; urgency=medium
+
+  * Initial release (Closes: #993212)
+
+ -- Hideki Yamane <henrich@debian.org>  Sun, 01 Aug 2021 00:56:39 +0900

@@ -1,0 +1,28 @@
+Source: ruby-async-rspec
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Hideki Yamane <henrich@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb (>= 1),
+               ruby-rspec (>= 3.0),
+               ruby-rspec-files (>= 1.0),
+               ruby-rspec-memory (>= 1.0),
+               ruby-async, ruby-async-io,
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-async-rspec.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-async-rspec
+Homepage: https://github.com/socketry/async-rspec
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-async-rspec
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends}
+Description: helpers for writing specs against the async gem
+ Provides useful RSpec.shared_contexts for testing code that builds
+ on top of async.

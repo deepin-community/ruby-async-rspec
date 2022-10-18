@@ -1,0 +1,19 @@
+From: Hideki Yamane <henrich@debian.org>
+Date: Sun, 1 Aug 2021 01:09:12 +0900
+Subject: Disable covered/rspec
+
+---
+ spec/spec_helper.rb | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/spec/spec_helper.rb b/spec/spec_helper.rb
+index ba5b504..bc26523 100644
+--- a/spec/spec_helper.rb
++++ b/spec/spec_helper.rb
+@@ -1,6 +1,4 @@
+ 
+-require 'covered/rspec'
+-
+ RSpec.configure do |config|
+ 	# Enable flags like --only-failures and --next-failure
+ 	config.example_status_persistence_file_path = ".rspec_status"
